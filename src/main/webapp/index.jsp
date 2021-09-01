@@ -16,13 +16,15 @@
 <body>
 <div class="container">
 	<br/><br/>
-	<h3><a href="Controller?option=toNew">New course</a></h3>
+	<h3><a href="toNew">New course</a></h3>
 	<br/><br/>
-	<h3><a href="Controller?option=toUpdate">Update Course</a></h3>
+	<h3><a href="toUpdate">Update Course</a></h3>
 	<br/><br/>
-	<h3><a href="Controller?option=toDelete">Delete Course</a></h3>
+	<h3><a href="toDelete">Delete Course</a></h3>
 	<br/><br/>	
-	<h3><a href="Controller?option=toRecover">Get Course by Id</a></h3>
+	<h3><a href="toRecover">Get Course by Id</a></h3>
+	<br/><br/>
+	<h3><a href="toSelectDuration">Get Course by Id</a></h3>
 	<br/><br/>
 </div>
 </body>

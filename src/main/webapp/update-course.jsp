@@ -17,6 +17,7 @@
 	<h1>Course details</h1>
 	<br/>
 	<form action="Controller?option=doUpdate&id=${requestScope.course.id}" method="post" class="form-horizontal" >
+		<input type="hidden" name="id" value="${requestScope.course.id}"/>
 		<div class="form-group">
 			<label class="control-label col-sm-2">Description:</label>
 			<input  type="text" name="description" class="form-control" style="width:30%" value="${requestScope.course.description}"/>

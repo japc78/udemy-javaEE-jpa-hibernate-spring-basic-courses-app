@@ -16,7 +16,7 @@
 <div class="container">
 	<h1>Add Course</h1>
 	<br/>
-	<form action="Controller?option=doAdd" method="post" class="form-horizontal" >
+	<form action="signUp" method="post" class="form-horizontal" >
 		<div class="form-group">
 			<label class="control-label col-sm-2">Description:</label>
 			<input  type="text" name="description" class="form-control" style="width:20%"/>
