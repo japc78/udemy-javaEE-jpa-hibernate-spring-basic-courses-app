@@ -1,4 +1,4 @@
-package com.japcdev.coursesapp.entities;
+package com.japcdev.coursesapp.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

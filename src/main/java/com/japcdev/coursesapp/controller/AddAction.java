@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.japcdev.coursesapp.entities.Course;
+import com.japcdev.coursesapp.model.Course;
 import com.japcdev.coursesapp.model.service.CourseService;
 
 /**

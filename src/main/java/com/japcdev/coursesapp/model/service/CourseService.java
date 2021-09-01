@@ -1,6 +1,6 @@
 package com.japcdev.coursesapp.model.service;
 
-import com.japcdev.coursesapp.entities.Course;
+import com.japcdev.coursesapp.model.Course;
 import com.japcdev.coursesapp.model.repository.CoursesRepository;
 
 public class CourseService {

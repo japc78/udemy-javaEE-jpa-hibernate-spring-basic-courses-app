@@ -5,7 +5,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 
-import com.japcdev.coursesapp.entities.Course;
+import com.japcdev.coursesapp.model.Course;
 
 public class CoursesRepository {
 	EntityManager em;
