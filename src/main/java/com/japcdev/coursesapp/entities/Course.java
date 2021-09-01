@@ -19,6 +19,14 @@ public class Course {
 
 	public Course() {
 	}
+	
+	
+	public Course(String description, int duration, double price) {
+		super();
+		this.description = description;
+		this.duration = duration;
+		this.price = price;
+	}
 
 
 	public Course(int id, String description, int duration, double price) {
