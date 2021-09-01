@@ -1,32 +1,33 @@
-package com.japcdev.coursesapp.model.service;
+package com.japcdev.coursesapp.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
 
 import com.japcdev.coursesapp.model.Course;
-import com.japcdev.coursesapp.model.repository.CoursesRepository;
+import com.japcdev.coursesapp.repository.CoursesRepositoryImpl;
 
-public class CourseService {
-	CoursesRepository cRepository;
-	
-	public CourseService() {
-		cRepository = new CoursesRepository();
-	}
-	
+public class CourseServiceImpl implements CourseService {
+	@Autowired
+	CoursesRepositoryImpl cRepository;
+
+	@Override
 	public void addCourse(Course course) {
-		cRepository.addCourse(course);
+		cRepository.addCourse(course);		
 	}
-	
-	
+
+	@Override
 	public Course findCourseById(int id) {
 		return cRepository.findCourseById(id);
 	}
-	
-	
+
+	@Override
 	public void updateCourse(Course course) {
 		if (cRepository.findCourseById(course.getId()) != null) {
-			cRepository.updateCourse(course);		
-		}
+		cRepository.updateCourse(course);		
 	}
-	
-	
+		
+	}
+
+	@Override
 	public void deleteCourse(int id) {
 		Course course = findCourseById(id);
 		

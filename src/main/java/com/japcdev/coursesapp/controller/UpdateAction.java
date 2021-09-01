@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.japcdev.coursesapp.model.Course;
-import com.japcdev.coursesapp.model.service.CourseService;
+import com.japcdev.coursesapp.service.CourseService;
 
 /**
  * Servlet implementation class UpdateAction
