@@ -3,10 +3,11 @@ package com.japcdev.coursesapp.repository;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
+import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.japcdev.coursesapp.model.Course;
-
+@Repository
 public class CoursesRepositoryImpl implements CoursesRepository {
 	@PersistenceContext(unitName = "coursesPU")
 	EntityManager em;
@@ -21,12 +22,12 @@ public class CoursesRepositoryImpl implements CoursesRepository {
 	public Course findCourseById(int id) {
 		return em.find(Course.class, id);
 	}
-	
+
 	@Transactional
 	@Override
 	public void updateCourse(Course course) {
 		em.merge(course);
-		
+
 	}
 
 	@Transactional
